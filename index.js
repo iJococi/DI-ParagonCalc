@@ -63,19 +63,33 @@ function results_add ( oInfo ) {
     if( oInfo.res > 0 ) resistance += oInfo.res;
     if( oInfo.pot > 0 ) potency += oInfo.pot;
     if( oInfo.poc > 0 ) pocket += oInfo.poc;
+    if( oInfo.lif > 0 ) points += oInfo.lif-1;
+    if( oInfo.dam > 0 ) points += oInfo.dam-1;
+    if( oInfo.arm > 0 ) points += oInfo.arm-1;
+    if( oInfo.pen > 0 ) points += oInfo.pen-1;
+    if( oInfo.res > 0 ) points += oInfo.res-1;
+    if( oInfo.pot > 0 ) points += oInfo.pot-1;
+    if( oInfo.poc > 0 ) points += oInfo.poc-1;
     points += 1;
 	results_out();
 	return;
 }
 //---------------------------------------------------------------------
 function results_sub ( oInfo ) {
-    if( oInfo.lif > 0 )life -= oInfo.lif;
+    if( oInfo.lif > 0 ) life -= oInfo.lif;
     if( oInfo.dam > 0 ) damage -= oInfo.dam;
     if( oInfo.arm > 0 ) armor -= oInfo.arm;
     if( oInfo.pen > 0 ) penetration -= oInfo.pen;
     if( oInfo.res > 0 ) resistance -= oInfo.res;
     if( oInfo.pot > 0 ) potency -= oInfo.pot;
     if( oInfo.poc > 0 ) pocket -= oInfo.poc;
+    if( oInfo.lif > 0 ) points -= oInfo.lif-1;
+    if( oInfo.dam > 0 ) points -= oInfo.dam-1;
+    if( oInfo.arm > 0 ) points -= oInfo.arm-1;
+    if( oInfo.pen > 0 ) points -= oInfo.pen-1;
+    if( oInfo.res > 0 ) points -= oInfo.res-1;
+    if( oInfo.pot > 0 ) points -= oInfo.pot-1;
+    if( oInfo.poc > 0 ) points -= oInfo.poc-1;
     points -= 1;
 	results_out();
 	return;
