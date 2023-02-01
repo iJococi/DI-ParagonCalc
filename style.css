@@ -31,12 +31,14 @@
     background: cyan;
     font-size: 16px; 
     text-align: center;
+    border: 1px black solid;
 }
 .paragon {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 2px;
     padding: 2px;
+    border: 1px black solid;
 }
 .celimg {
     padding: 0px;
