@@ -1,0 +1,51 @@
+/* OVO JE CSS */
+
+* { box-sizing: border-box; }
+
+
+.komplet {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+.paragon {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2px;
+    padding: 2px;
+}
+.header {
+    background: cyan;
+    font-size: 6; 
+    text-align: center;
+}
+.celimg {
+    padding: 0px;
+    min-width: 0;
+    aspect-ratio: 1;
+    background-size: cover;
+    border: 1px white solid;
+}
+.celimg[data-selected="true"] {
+    border: 1px greenyellow solid;
+}
+.celimg[data-enabled="true"]:hover {
+    filter: brightness(2.0);
+}
+.celimg[data-enabled="false"] {
+    filter: grayscale(100%) brightness(1.0);
+}
+.celimg[data-krug="true"] {
+    border-radius: 99999px;
+}
+.celtxt {
+    padding: 0px;
+    text-align: center;
+    min-width: 0;
+    font-size: 3.5; 
+    background-size: cover;
+}
+.celtxt[data-selected="true"] {
+    background-color: greenyellow;
+}
+
