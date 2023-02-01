@@ -8,19 +8,35 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 5px;
 
-    max-width: 1000px;
+    max-width: 1200px;
+    min-width: 800px;
     margin: auto;
+}
+.result {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+    padding: 2px;
+    max-width: 1200px;
+    min-width: 800px;
+    margin: auto;
+    font-size: 16px; 
+    text-align: center;
+    border-width: 1pt;
+}
+.results[data-points="true"] {
+    border-width: 3pt;
+}
+.header {
+    background: cyan;
+    font-size: 16px; 
+    text-align: center;
 }
 .paragon {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 2px;
     padding: 2px;
-}
-.header {
-    background: cyan;
-    font-size: 16px; 
-    text-align: center;
 }
 .celimg {
     padding: 0px;
@@ -50,5 +66,15 @@
 }
 .celtxt[data-selected="true"] {
     background-color: greenyellow;
+}
+.celtxt[data-selected="true"] {
+    background-color: greenyellow;
+}
+.celres {
+    padding: 0px;
+    min-width: 0;
+    min-height: 20;
+    background-size: cover;
+    border: 1px black solid;
 }
 
